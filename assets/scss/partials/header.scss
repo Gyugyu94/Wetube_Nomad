@@ -1,0 +1,50 @@
+.header {
+  background-color: $red;
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  .header__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .header__column {
+    i {
+      color: white;
+      font-size: 40px;
+    }
+    form {
+      width: 100%;
+      input {
+        margin-top: 5px;
+        padding: 7px 10px;
+        width: 450px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: $black;
+        font-weight: 600;
+        &::placeholder {
+          font-weight: 300;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+    ul {
+      display: flex;
+      margin-top: 7px;
+      font-size: 17px;
+      font-weight: 600;
+      color: white;
+      font-weight: 500;
+      li {
+        padding-right: 8px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
